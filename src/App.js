@@ -13,6 +13,9 @@ import Orders from './Pages/Orders';
 import Frequent from './Pages/Frequent';
 import ScatterPlot from './Components/charts/ScatterPlot';
 import ScatterTest from './ScatterTest';
+import ClusterChart from './Components/charts/ClusterChart';
+import Cluster from './Pages/Cluster';
+import ClusterItem from './Pages/ClusterItem';
 
 function App() {
   return (
@@ -21,14 +24,16 @@ function App() {
     <Route path='/' element={<Layout/>}>
     <Route path="/"  element={<Products />}></Route> 
     <Route path="/product"  element={<Products />}></Route> 
-    <Route path="createproduct" element={<ProductCreate />} /> {/* Nested Create Page */}
-    <Route path="editproduct/:id" element={<ProductEdit />} /> {/* Nested Edit Page */}
+    <Route path="createproduct" element={<ProductCreate />} /> 
+    <Route path="editproduct/:id" element={<ProductEdit />} /> 
     <Route path='/bill' element={<Bill/>}></Route>
     <Route path='/prodAnalytics' element={<ProductAnalytics/>}></Route>
     <Route path='/shopAnalytics' element={<ShopAnalytics/>}></Route>
     <Route path='/orders' element={<Orders/>}></Route>
     <Route path='/frequent' element={<Frequent/>} ></Route>
     <Route path='/scattertest' element={<ScatterTest />} />
+    <Route path='/cluster' element={<Cluster />}></Route>
+    <Route path='/clusteritem' element={<ClusterItem />}></Route>
     </Route>
   </Routes>
  </BrowserRouter>

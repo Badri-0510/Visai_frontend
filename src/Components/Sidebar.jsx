@@ -6,7 +6,7 @@ import { RiReceiptFill } from "react-icons/ri";
 import { SiGoogleanalytics } from "react-icons/si"; 
 import controlImg from "../assets/control.png";
 import logoImg from "../assets/logohead.jpeg";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaChartBar, FaRegUserCircle, FaTrophy } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { TbBinaryTree2 } from "react-icons/tb";
 export default function Sidebar() {
@@ -18,7 +18,9 @@ export default function Sidebar() {
     { title: "Orders", src: AiOutlineTransaction,navi:"/orders" },
     { title: "Product Analytics", src: SiGoogleanalytics,navi:"/prodAnalytics" },
     { title: "Shop Analytics", src: AiOutlineShop,navi:"/shopAnalytics" },
-    { title: "Frequent Pattern Analytics", src: TbBinaryTree2, navi: "/frequent" }
+    { title: "Frequent Pattern Analytics", src: TbBinaryTree2, navi: "/frequent" },
+    { title: "Cluster Analytics", src: FaChartBar, navi: "/cluster" },  
+    { title: "Product Rank", src: FaTrophy, navi: "/clusteritem" }, 
   ];
  const navigate=useNavigate();
   return (
