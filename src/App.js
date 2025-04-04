@@ -10,6 +10,9 @@ import Layout from './Components/Layout';
 import ProductCreate from './Pages/Product/ProductCreate';
 import ProductEdit from './Pages/Product/ProductEdit';
 import Orders from './Pages/Orders';
+import Frequent from './Pages/Frequent';
+import ScatterPlot from './Components/charts/ScatterPlot';
+import ScatterTest from './ScatterTest';
 
 function App() {
   return (
@@ -24,6 +27,8 @@ function App() {
     <Route path='/prodAnalytics' element={<ProductAnalytics/>}></Route>
     <Route path='/shopAnalytics' element={<ShopAnalytics/>}></Route>
     <Route path='/orders' element={<Orders/>}></Route>
+    <Route path='/frequent' element={<Frequent/>} ></Route>
+    <Route path='/scattertest' element={<ScatterTest />} />
     </Route>
   </Routes>
  </BrowserRouter>

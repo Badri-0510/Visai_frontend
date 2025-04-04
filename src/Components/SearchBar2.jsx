@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function SearchBar({ onSearch, onClear }) {
+export default function SearchBar2 ({ onSearch, onClear }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = () => {
@@ -19,7 +19,7 @@ export default function SearchBar({ onSearch, onClear }) {
       <input
         type="text"
         className="p-2 border rounded-l-md"
-        placeholder= "Search By PId"
+        placeholder="Search By PName"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
